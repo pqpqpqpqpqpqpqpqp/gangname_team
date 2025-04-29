@@ -97,11 +97,12 @@
             border-radius: 8px;
 
             width: 745px;
-            height: 80px;
+            height: 90px;
 
             display: flex;
-            justify-content: start;
-            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
 
             font-size: 15px;
             font-weight: bold;
@@ -146,10 +147,31 @@
 
     <script>
 
-        
+    
 
         function click_1() {
-            document.getElementById('click_1').innerHTML = "git init";
+            document.getElementById('row_1').innerHTML = "git init";
+        }
+        function click_2() {
+            document.getElementById('row_1').innerHTML = "git add";
+        }
+        function click_3() {
+            document.getElementById('row_1').innerHTML = "git commit -m '메세지' ";
+        }
+        function click_4() {
+            document.getElementById('row_1').innerHTML = "git status";
+        }
+        function click_5() {
+            document.getElementById('row_2').innerHTML = "새로운 Git 저장소를 초기화합니다";
+        }
+        function click_6() {
+            document.getElementById('row_2').innerHTML = "모든 변경사항을 스테이징 영역에 추가합니다";
+        }
+        function click_7() {
+            document.getElementById('row_2').innerHTML = "변경사항을 커밋합니다";
+        }
+        function click_8() {
+            document.getElementById('row_2').innerHTML = "현재 저장소의 상태를 확인합니다";
         }
     </script>
 </body>
