@@ -14,24 +14,50 @@
         .outbox {
             padding: 20px 20px;
             width: 800px;
-            height: 600px;
+            /* height: 600px; */
+            height: 820px;
             border: 1px solid black;
             border-radius: 10px;
             background-color: white;
 
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
+           position: relative;
+
+            
         }
         .inbox {
+            position: absolute;
+
             border: 1px solid black;
-            height: 70%;
+            width: 800px;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+
         }
         .inbox_column {
             border: 1px solid black;
-            height: 80px;
+            height:150px;
             border-radius: 10px;
             margin-bottom: 10px;
+            cursor: pointer;
+            padding: 10px;
+
+            display: flex;
+            flex-direction: column;
+        }
+        .inbox_footer {
+            border: 1px solid black;
+            height: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .hash {
+            font-size: 12px;
+            color: gray;
+        }
+        .commit_history {
+            font-weight: bold;
         }
     </style>
 
@@ -43,10 +69,30 @@
         <h1>Git 커밋 히스토리 이해하기</h1>
         <span>각 커밋을 클릭하여 상세 정보를 확인해보세요!</span>
         <div class="inbox">
-            <div class="inbox_column"></div>
-            <div class="inbox_column"></div>
-            <div class="inbox_column"></div>
-            <div class="inbox_column"></div>
+            <div class="inbox_column">
+                <div class="hash">a1bwc3d</div>
+                <div class="commit_history">초기 프로젝트 설정</div>
+            </div>
+            <div class="inbox_column">
+                <div class="hash">a1bwc3d</div>
+                <div class="commit_history">초기 프로젝트 설정</div>
+            </div>
+            <div class="inbox_column">
+                <div class="hash">a1bwc3d</div>
+                <div class="commit_history">초기 프로젝트 설정</div>
+            </div>
+            <div class="inbox_column">
+                <div class="hash">a1bwc3d</div>
+                <div class="commit_history">초기 프로젝트 설정</div>
+            </div>
+            <div class="inbox_column">
+                <div class="hash">a1bwc3d</div>
+                <div class="commit_history">초기 프로젝트 설정</div>
+            </div>
+            <div class="inbox_footer">
+                <div class="commit_history">커밋상세정보</div>
+            </div>
+           
         </div>
     </div>
     
