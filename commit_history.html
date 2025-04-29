@@ -59,7 +59,14 @@
             cursor: pointer;
             padding: 10px;
 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
             background-color: rgb(196, 231, 196);
+        }
+        .inbox_footer > div {
+            margin: 10px;
         }
         .hash {
             font-size: 12px;
@@ -95,12 +102,12 @@
                 <div class="commit_history">디자인 개선</div>
             </div>
             <div class="inbox_footer">
-                <h3>커밋상세정보</h3> 
-                <span>해시: </span><span id="user_hash"></span><br/><br/>
-                <span>메시지: </span><span id="user_message"></span><br/><br/>
-                <span>작성자: </span><span id="user_maker"></span><br/><br/>
-                <span>날짜: </span><span id="user_date"></span><br/><br/>
-                <span>변경사항: </span><span id="user_etc"></span><br/><br/>
+                <div><h3>커밋 상세 정보</h3></div>
+                <div><span>해시: </span><span id="user_hash"></span></div>
+                <div><span>메시지: </span><span id="user_message"></span></div>
+                <div><span>작성자: </span><span id="user_maker"></span></div>
+                <div><span>날짜: </span><span id="user_date"></span></div>
+                <div><span>변경사항: </span><span id="user_etc"></span></div>
             </div>
            
         </div>
