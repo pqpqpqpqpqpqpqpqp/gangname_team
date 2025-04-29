@@ -119,27 +119,39 @@
 
                 <div class="card_1">
 
-                    <div class="left_1" onclick="click_1()">git init</div>
-                    <div class="left_1" onclick="click_2()">git add</div>
-                    <div class="left_1" onclick="click_3()">git commit -m "메세지"</div>
-                    <div class="left_1" onclick="click_4()">git status</div>
+                    <div class="left_1" onclick="click_1()" id="click_1">git init</div>
+                    <div class="left_1" onclick="click_2()" id="click_2">git add</div>
+                    <div class="left_1" onclick="click_3()" id="click_3">git commit -m "메세지"</div>
+                    <div class="left_1" onclick="click_4()" id="click_4">git status</div>
                 </div>
 
                 <div class="card_2">
 
-                    <div class="right_1" onclick="click_5()">새로운 Git 저장소를 초기화합니다</div>
-                    <div class="right_1" onclick="click_6()">모든 변경사항을 스테이징 영역에 추가합니다</div>
-                    <div class="right_1" onclick="click_7()">변경사항을 커밋합니다</div>
-                    <div class="right_1" onclick="click_8()">현재 저장소의 상태를 확인합니다</div>
+                    <div class="right_1" onclick="click_5()" id="click_5">새로운 Git 저장소를 초기화합니다</div>
+                    <div class="right_1" onclick="click_6()" id="click_6">모든 변경사항을 스테이징 영역에 추가합니다</div>
+                    <div class="right_1" onclick="click_7()" id="click_7">변경사항을 커밋합니다</div>
+                    <div class="right_1" onclick="click_8()" id="click_8">현재 저장소의 상태를 확인합니다</div>
 
                 </div>
              </div>
         
-             <div class="input_card">123</div>
+             <div class="input_card">
+                <span id="row_1"></span><br />
+                <span id="row_2"></span>
+             </div>
         </div>
 
 
     </div>
+
+    <script>
+
+        
+
+        function click_1() {
+            document.getElementById('click_1').innerHTML = "git init";
+        }
+    </script>
 </body>
 
 </html>
