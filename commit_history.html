@@ -18,6 +18,20 @@
             border: 1px solid black;
             border-radius: 10px;
             background-color: white;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .inbox {
+            border: 1px solid black;
+            height: 70%;
+        }
+        .inbox_column {
+            border: 1px solid black;
+            height: 80px;
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
     </style>
 
@@ -27,6 +41,13 @@
 
     <div class="outbox">
         <h1>Git 커밋 히스토리 이해하기</h1>
+        <span>각 커밋을 클릭하여 상세 정보를 확인해보세요!</span>
+        <div class="inbox">
+            <div class="inbox_column"></div>
+            <div class="inbox_column"></div>
+            <div class="inbox_column"></div>
+            <div class="inbox_column"></div>
+        </div>
     </div>
     
 </body>
